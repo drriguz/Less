@@ -1,0 +1,50 @@
+{
+	"name": "Less",
+	"author": "Riguz Lee",
+	"url": "https://github.com/drriguz/less",
+	"descriptionmsg": "less-desc",
+	"namemsg": "skinname-less",
+	"license-name": "GPL-2.0+",
+    "requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"type": "skin",
+	"ValidSkinNames": {
+		"less": "Less"
+	},
+	"AutoloadClasses": {
+		"SkinLess": "Less.skin.php",
+        "LessTemplate": "Less.template.php"
+	},
+	"MessagesDirs": {
+		"FooBar": "i18n"
+	},
+    "ResourceModules": {
+		"skins.less.styles":  {
+            "position": "top",
+            "styles": [
+                "assets/foundation/css/foundation.min.css"
+            ]
+        },
+        "skins.less.whatinput":  {
+            "position": "bottom",
+            "styles": [
+                "assets/foundation/js/vendor/what-input.min.js"
+            ]
+        },
+        "skins.less.js":  {
+            "position": "bottom",
+            "styles": [
+                "assets/foundation/js/vendor/foundation.min.js"
+            ],
+            "dependencies": [
+                "jquery.cookie",
+                "skins.less.whatinput"
+            ]
+        }
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Less"
+	}
+}
