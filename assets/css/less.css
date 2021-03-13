@@ -5,11 +5,11 @@ html, body {
 /**
  * Adding this class prevents flash of unstyled content for a number of foundation components.
  **/
- .no-js .top-bar {
+.no-js .top-bar, .no-js .nested, .no-js .off-canvas {
     display: none;
-  }
+}
   
-  @media screen and (min-width: 40em) {
+@media screen and (min-width: 40em) {
     .no-js .top-bar {
       display: flex;
     }
@@ -26,10 +26,10 @@ img.top-bar-logo {
 .top-bar-logo {
     display: inline-block;
 }
-.top-bar, .top-bar ul {
+.top-bar, .title-bar, .off-canvas, .submenu {
     background-color: #405588;
 }
 
-.top-bar a {
+.off-canvas a {
     color: white;
 }
