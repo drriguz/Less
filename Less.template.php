@@ -7,7 +7,7 @@ class LessTemplate extends BaseTemplate
 		$this->html('headelement'); ?>
 
 		<!-- START LESS TEMPLATE -->
-		<div class="title-bar grid-x" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+		<div class="title-bar grid-x show-for-small-only" data-responsive-toggle="responsive-menu" data-hide-for="medium">
 			<div class="cell auto">
 				<h4><?php echo $this->text('sitename'); ?></h4>
 			</div>
@@ -23,6 +23,11 @@ class LessTemplate extends BaseTemplate
 					<a href="<?php echo $this->data['nav_urls']['mainpage']['href']; ?>">
 						<img alt="<?php echo $this->text('sitename'); ?>" class="top-bar-logo" src="<?php echo $this->text('logopath') ?>">
 					</a>
+				</li>
+				<li class="show-for-small-only">
+					<form action="<?php $this->text('wgScript'); ?>" id="searchform" class="mw-search">
+						<?php echo $this->makeSearchInput(array('placeholder' => wfMessage('searchsuggest-search')->text(), 'id' => 'searchInput')); ?>
+					</form>
 				</li>
 				<?php foreach ($this->getSidebar() as $boxName => $box) {
 					if (($box['header'] != wfMessage('toolbox')->text())) { ?>

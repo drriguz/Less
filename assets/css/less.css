@@ -5,17 +5,14 @@ html, body {
 /**
  * Adding this class prevents flash of unstyled content for a number of foundation components.
  **/
-.no-js .top-bar, .no-js .nested, .no-js .off-canvas {
+.no-js .top-bar, .no-js .nested {
     display: none;
 }
-  
-@media screen and (min-width: 40em) {
-    .no-js .top-bar {
-      display: flex;
-    }
-  
-    .no-js .title-bar {
-      display: none;
+
+/* https://get.foundation/sites/docs/media-queries.html */
+@media screen and (max-width: 39.9375em) {
+    .no-js .off-canvas {
+        display: none;
     }
 }
 
