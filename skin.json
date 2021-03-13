@@ -25,6 +25,7 @@
             "styles": [
                 "assets/foundation/css/foundation.min.css",
                 "assets/motion-ui/motion-ui.min.css",
+                "assets/font-awesome/css/font-awesome.min.css",
                 "assets/css/less.css"
             ]
         },

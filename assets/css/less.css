@@ -27,6 +27,14 @@ img.top-bar-logo {
     background-color: #405588;
 }
 
-.off-canvas a {
+.off-canvas a, .title-bar a {
     color: white;
+}
+
+.close-button, .close-button:hover, .close-button:focus {
+    color: #ffae00;
+}
+
+button:focus {
+    outline: none;
 }
