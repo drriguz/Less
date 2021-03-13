@@ -1,0 +1,6 @@
+/**
+ * Adding this class prevents flash of unstyled content for a number of foundation components.
+ **/
+.no-js .top-bar, .no-js .title-bar {
+    display: none;
+}

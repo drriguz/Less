@@ -23,19 +23,23 @@
 		"skins.less.styles":  {
             "position": "top",
             "styles": [
-                "assets/foundation/css/foundation.min.css"
+                "assets/foundation/css/foundation.min.css",
+                "assets/motion-ui/motion-ui.min.css",
+                "assets/css/less.css"
             ]
         },
         "skins.less.whatinput":  {
             "position": "bottom",
-            "styles": [
+            "scripts": [
                 "assets/foundation/js/vendor/what-input.min.js"
             ]
         },
         "skins.less.js":  {
             "position": "bottom",
-            "styles": [
-                "assets/foundation/js/vendor/foundation.min.js"
+            "scripts": [
+                "assets/foundation/js/foundation.min.js",
+                "assets/motion-ui/motion-ui.min.js",
+                "assets/js/init.js"
             ],
             "dependencies": [
                 "jquery.cookie",
