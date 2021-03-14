@@ -4,18 +4,13 @@ class LessTemplate extends BaseTemplate
 {
 	public function execute()
 	{
+		global $wgUser;
 		$this->html('headelement'); ?>
 
 		<!-- START LESS TEMPLATE -->
 		<?php include_once("partial/NavSmall.php") ?>
 		<?php include_once("partial/NavMedium.php") ?>
-
-
-
-		<div class="off-canvas-content" data-off-canvas-content>
-			<p>hello</p>
-		</div>
-
+		<?php include_once("partial/Content.php") ?>
 
 		<!-- END LESS TEMPLATE   -->
 
