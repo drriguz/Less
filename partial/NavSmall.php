@@ -4,24 +4,7 @@
 			<h4><?php echo $this->text('sitename'); ?></h4>
 		</a>
 	</div>
-	<ul class="cell auto dropdown menu" data-dropdown-menu>
-		<li>
-			<a href="#"><i class="fa fa-cogs"></i></a>
-			<ul class="menu vertical nested" data-submenu>
-				<?php foreach ($this->getToolbox() as $key => $item) {
-					echo $this->makeListItem($key, $item);
-				} ?>
-			</ul>
-		</li>
-		<li>
-			<a href="#"><i class="fa fa-user"></i></a>
-			<ul class="menu vertical nested" data-submenu>
-				<?php foreach ($this->getPersonalTools() as $key => $item) {
-					echo $this->makeListItem($key, $item);
-				} ?>
-			</ul>
-		</li>
-	</ul>
+	<?php include("PageActions.php") ?>
 	<button class="menu-icon cell" type="button" data-toggle="offCanvas"></button>
 </div>
 <div class="off-canvas position-right" id="offCanvas" data-off-canvas>
