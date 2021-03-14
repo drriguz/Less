@@ -7,8 +7,14 @@ html, body {
  * https://get.foundation/sites/docs/media-queries.html
  **/
 
-.no-js .top-bar, .no-js .nested {
+.no-js .nested {
     display: none;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .no-js .top-bar {
+        display: none;
+    } 
 }
 
 .no-js .off-canvas {
