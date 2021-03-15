@@ -8,9 +8,8 @@ class LessTemplate extends BaseTemplate
 		$this->html('headelement'); ?>
 
 		<!-- START LESS TEMPLATE -->
+		<?php include_once("partial/Nav.php") ?>
 		<?php include_once("partial/NavSmall.php") ?>
-		<?php include_once("partial/NavMedium.php") ?>
-		<?php include_once("partial/Content.php") ?>
 
 		<!-- END LESS TEMPLATE   -->
 
