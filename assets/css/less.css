@@ -7,20 +7,34 @@ html, body {
  * https://get.foundation/sites/docs/media-queries.html
  **/
 
-.no-js .nested {
+/* hide sub-menu & offcanvas when loading */
+.no-js .nested, .no-js .off-canvas {
     display: none;
 }
 
-@media screen and (max-width: 39.9375em) {
-    .no-js .top-bar {
-        display: none;
-    } 
+/* make menu close to topbar bottom */
+.top-bar{
+    align-items: flex-end;
 }
 
-.no-js .off-canvas {
-    display: none;
+/* make actions menu close to right */
+.top-bar-right ul {
+    justify-content: flex-end;
 }
 
+/* remove dropdown border */
+.is-dropdown-submenu {
+    border: none;
+    padding-top: 10px;
+}
+
+.site-title {
+    color: white;
+}
+
+.site-subtitle {
+    color: #eee;
+}
 
 
 img.top-bar-logo {
@@ -35,6 +49,15 @@ img.top-bar-logo {
 }
 
 .off-canvas a, .title-bar a, .top-bar a {
+    color: #95bde5;
+    font-weight: bold;
+}
+
+.top-bar a:active {
+    color: white;
+}
+
+.top-bar a:hover {
     color: white;
 }
 

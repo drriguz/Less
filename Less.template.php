@@ -9,7 +9,7 @@ class LessTemplate extends BaseTemplate
 
 		<!-- START LESS TEMPLATE -->
 		<?php include_once("partial/Nav.php") ?>
-		<?php include_once("partial/NavSmall.php") ?>
+		<?php include_once("partial/OffCanvas.php") ?>
 
 		<!-- END LESS TEMPLATE   -->
 
