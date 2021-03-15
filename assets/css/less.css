@@ -36,6 +36,13 @@ html, body {
     color: #eee;
 }
 
+.top-bar-title {
+    padding-left: 20px;
+}
+
+.search-wrapper {
+    padding: 10px;
+}
 
 img.top-bar-logo {
     height: 80px;

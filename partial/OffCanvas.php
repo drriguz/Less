@@ -1,15 +1,13 @@
-
-<div class="off-canvas position-right" id="offCanvas" data-off-canvas>
+<div class="off-canvas position-left" id="offCanvas" data-off-canvas>
 	<button class="close-button" aria-label="Close menu" type="button" data-close>
-		<span aria-hidden="true">&times;</span>
+		<i class="fa fa-close"></i>
 	</button>
 
 	<ul class="accordion-menu menu vertical" data-accordion-menu data-submenu-toggle="true">
 		<li>
 			<img alt="<?php echo $this->text('sitename'); ?>" class="top-bar-logo" src="<?php echo $this->text('logopath') ?>">
 		</li>
-
-		<li class="show-for-small-only">
+		<li class="search-wrapper">
 			<form action="<?php $this->text('wgScript'); ?>" id="searchform" class="mw-search">
 				<?php echo $this->makeSearchInput(array('placeholder' => wfMessage('searchsuggest-search')->text(), 'id' => 'searchInput')); ?>
 			</form>

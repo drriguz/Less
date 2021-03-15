@@ -1,9 +1,16 @@
 <div class="title-bar hide-for-large">
-    <div class="title-bar-title"><a href="<?php echo $this->data['nav_urls']['mainpage']['href']; ?>">
-            <img alt="<?php echo $this->text('sitename'); ?>" class="top-bar-logo" src="<?php echo $this->text('logopath') ?>">
-        </a></div>
-    <div class="title-bar-right">
+    <div class="title-bar-title">
         <button class="menu-icon" type="button" data-open="offCanvas"></button>
+        <?php echo $this->text('sitename'); ?>
+    </div>
+    <div class="title-bar-left">
+
+    </div>
+    <div class="title-bar-right">
+        <ul class="dropdown menu" data-dropdown-menu>
+            <?php include_once("PageActions.php") ?>
+        </ul>
+
     </div>
 </div>
 
