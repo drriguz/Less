@@ -96,3 +96,12 @@ ul.page-actions {
 ul.page-actions .submenu {
     background-color: #f0f0f0;
 }
+
+.mw-body {
+    margin-bottom: 20px;
+}
+
+.footer {
+    padding-bottom: 25px;
+    color: grey;
+}

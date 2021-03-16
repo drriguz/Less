@@ -1,5 +1,5 @@
 <div class="off-canvas-content" data-off-canvas-content>
-    <div class="grid-container mw-body"  id="content">
+    <div class="grid-container mw-body" id="content">
         <div class="grid-x">
             <div class="cell auto">
                 <h1><?php $this->html('title'); ?></h1>
@@ -30,6 +30,9 @@
             </div>
             <div class="cell">
                 <?php $this->html('catlinks'); ?>
+            </div>
+            <div class="cell">
+                <?php $this->html('dataAfterContent'); ?>
             </div>
         </div>
     </div>
