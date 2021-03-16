@@ -5,7 +5,9 @@
 
 	<ul class="accordion-menu menu vertical" data-accordion-menu data-submenu-toggle="true">
 		<li>
-			<img alt="<?php echo $this->text('sitename'); ?>" class="top-bar-logo" src="<?php echo $this->text('logopath') ?>">
+			<a href="<?php echo $this->data['nav_urls']['mainpage']['href']; ?>">
+				<img alt="<?php echo $this->text('sitename'); ?>" class="top-bar-logo" src="<?php echo $this->text('logopath') ?>">
+			</a>
 		</li>
 		<li class="search-wrapper">
 			<form action="<?php $this->text('wgScript'); ?>" id="searchform" class="mw-search">

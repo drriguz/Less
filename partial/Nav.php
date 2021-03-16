@@ -8,7 +8,7 @@
     </div>
     <div class="title-bar-right">
         <ul class="dropdown menu" data-dropdown-menu>
-            <?php include_once("PageActions.php") ?>
+            <?php include("PageActions.php") ?>
         </ul>
 
     </div>
@@ -49,7 +49,7 @@
                     </li>
             <?php }
             } ?>
-            <?php include_once("PageActions.php") ?>
+            <?php include("PageActions.php") ?>
         </ul>
 
     </div>

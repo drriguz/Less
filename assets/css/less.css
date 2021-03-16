@@ -1,7 +1,12 @@
 html, body {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
-
+.mw-body h1 { font-size: 24px; }
+.mw-body h2 { font-size: 20px; }
+.mw-body h3 { font-size: 19px; }
+.mw-body h4 { font-size: 18px; }
+.mw-body h5 { font-size: 17px; }
+.mw-body h6 { font-size: 16px; }
 /**
  * Adding this class prevents flash of unstyled content for a number of foundation components.
  * https://get.foundation/sites/docs/media-queries.html
@@ -82,4 +87,12 @@ button:focus {
 
 .dropdown.menu>li.is-dropdown-submenu-parent>a::after {
     border-color: white transparent transparent;
+}
+
+ul.page-actions {
+    background-color: rgba(149,189,229,0.5);
+}
+
+ul.page-actions .submenu {
+    background-color: #f0f0f0;
 }
