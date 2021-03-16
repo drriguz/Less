@@ -97,6 +97,14 @@ ul.page-actions .submenu {
     background-color: #f0f0f0;
 }
 
+.page-actions {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.page-title {
+    margin-bottom: 20px;
+}
+
 .mw-body {
     margin-bottom: 20px;
 }
