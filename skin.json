@@ -5,6 +5,7 @@
 	"descriptionmsg": "less-desc",
 	"namemsg": "skinname-less",
 	"license-name": "GPL-2.0+",
+    "manifest_version": 2,
     "requires": {
 		"MediaWiki": ">= 1.35.0"
 	},
@@ -21,6 +22,14 @@
 	},
     "ResourceModules": {
 		"skins.less.styles":  {
+            "class": "ResourceLoaderSkinModule",
+            "features": [
+                "elements",
+                "content-media",
+                "interface",
+                "interface-message-box",
+                "logo"
+            ],
             "position": "top",
             "styles": [
                 "assets/foundation/css/foundation.min.css",
