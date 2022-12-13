@@ -5,7 +5,11 @@ class LessTemplate extends BaseTemplate
 	public function execute()
 	{
 		global $wgUser;
-		$this->html('headelement'); ?>
+		$skinOptions = $this->getSkin()->getOptions();
+		$bodyOnly = $skinOptions['bodyOnly'] ?? false;
+		if ( !$bodyOnly ) {
+			$this->html('headelement');
+		} ?>
 
 		<!-- START LESS TEMPLATE -->
 		<?php include_once("partial/Nav.php") ?>
@@ -14,8 +18,12 @@ class LessTemplate extends BaseTemplate
 		<?php include_once("partial/Footer.php") ?>
 
 		<!-- END LESS TEMPLATE   -->
+		<?php
+		if ( $bodyOnly ) {
+			return;
+		}
 
-		<?php $this->printTrail(); ?>
+		$this->printTrail(); ?>
 		</body>
 
 		</html><?php

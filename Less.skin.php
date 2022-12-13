@@ -2,7 +2,18 @@
 class SkinLess extends SkinTemplate {
 	var $skinname = 'less', $stylename = 'Less',
 		$template = 'LessTemplate';
-	
+
+	/**
+	 * @inheritDoc
+	 */
+	public function __construct( $options ) {
+		$skinOptions = $this->getOptions();
+		if ( isset( $skinOptions['bodyOnly' ] ) ) {
+			$options['bodyOnly'] = true;
+		}
+		parent::__construct( $options );
+	}
+
 	public function initPage( OutputPage $out ) {
 		parent::initPage( $out );
 
@@ -11,12 +22,14 @@ class SkinLess extends SkinTemplate {
 		$out->addModules( 'skins.less.js' );
 
 		$out->addHtmlClasses('no-js');
-	}
-
-	function setupSkinUserCss( OutputPage $out ) {
-		parent::setupSkinUserCss( $out );
+		$skinOptions = $this->getOptions();
+		if ( !isset( $skinOptions['bodyOnly'] ) ) {
+			$out->addModuleStyles( array(
+				'mediawiki.skinning.interface',
+			) );
+		}
 		$out->addModuleStyles( array(
-			'mediawiki.skinning.interface', 'skins.less.styles'
+			'skins.less.styles'
 		) );
 	}
 }
